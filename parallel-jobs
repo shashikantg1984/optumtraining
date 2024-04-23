@@ -1,6 +1,3 @@
-—————-
-parallel example
-—————-
 pipeline {
     agent any
     stages {
