@@ -1,7 +1,7 @@
 pipeline {
     agent any
     stages {
-        stage(‘Stages Running in Parallel’) {
+stage(‘Stages Running in Parallel’) {
             failFast true
             parallel {
                 stage(‘Stage1’) {
@@ -13,7 +13,8 @@ pipeline {
                 stage(‘Stage2’) {
                     steps {
                         echo 'Stage2 executing'
-                        sleep 10
+                        sleep 2
+error ‘simulating error happened on Stage2’
                     }
                 }
                 stage(‘Stage3’) {
