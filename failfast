@@ -13,9 +13,9 @@ pipeline {
                 stage('Stage2') {
                     steps {
                         echo 'Stage2 executing'
-                        sleep 10
+                        sleep 1
+error 'simulating error at state 2'
                     }
-                error 'simulating error at state 2'
                 }
                 stage('Stage3') {
                     steps {
